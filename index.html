@@ -1,0 +1,584 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>아넥스</title>
+    <!-- <meta http-equiv='Content-Type' content='text/html; charset=UTF-8'/> -->
+    <meta charset='UTF-8' />
+    <meta http-equiv="content-type" content="text/html; charset=kr" />
+    <meta name="viewport" id="viewport"
+        content="user-scalable=yes, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, width=device-width" />
+    <meta name='ROBOTS' content='index,follow' />
+    <meta http-equiv='X-UA-Compatible' content='IE=EDGE' />
+    <meta name='viewport' content='width=device-width,initial-scale=1' />
+    <meta NAME='GOOGLEBOT' CONTENT='NOINDEX, NOFOLLOW' />
+    <meta name="naver-site-verification" content="a42ef9bfce975cda599d6a10d4855adc3eadffa5" />
+    <!-- Facebook Meta Tags / 페이스북 오픈 그래프 -->
+    <!-- kakao Meta Tags / 카카오 -->
+    <meta property='og:title' content='아넥스' />
+    <meta property='og:image' content='https://smtseller.net/himg/Main/annexpna_main.png' />
+    <meta property="og:image:alt" content="아넥스" />
+    <meta property="og:image:width" content="800" />
+    <meta property="og:image:height" content="400" />
+    <meta property='og:url' content='https://annexpna.com' />
+    <meta property="og:site_name" content="아넥스" />
+    <meta property='og:description' content='아넥스는 해외상품을 수집하고 판매까지 이 모든 노하우를 아넥스에서 공개합니다. 해외직구 아넥스와 함께라면 쉬워집니다.' />
+    <meta property="ia:markup_url" content="https://annexpna.com" />
+    <meta property="ia:rules_url" content="https://annexpna.com" />
+    <meta property="og:locale" content="ko_kr" />
+    <meta property='og:type' content='website' />
+
+    <!-- Twitter Meta Tags / 트위터 -->
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="아넥스" />
+    <meta name="twitter:description" content="아넥스는 해외상품을 수집하고 판매까지 이 모든 노하우를 아넥스에서 공개합니다. 해외직구 아넥스와 함께라면 쉬워집니다." />
+    <meta name="twitter:image" content="https://smtseller.net/himg/Main/annexpna_main.png" />
+
+    <!-- Google / Search Engine Tags / 구글 검색 엔진 -->
+    <meta itemprop="name" content="아넥스" />
+    <meta itemprop="description" content="아넥스는 해외상품을 수집하고 판매까지 이 모든 노하우를 아넥스에서 공개합니다. 해외직구 아넥스와 함께라면 쉬워집니다." />
+    <meta itemprop="image" content="https://smtseller.net/himg/Main/annexpna_main.png" />
+
+    <meta name='keywords'
+        content='해외직구, 1인창업, 오픈마켓, 스마트, 플랫폼, 해외, 한국상품, 해외상품, 스크랩, 물류대행, SMART, smart, 아넥스, ANNEX, annex, ANNEXPNA, annexpna' />
+    <meta name='description' content='아넥스는 해외상품을 수집하고 판매까지 이 모든 노하우를 아넥스에서 공개합니다. 해외직구 아넥스와 함께라면 쉬워집니다.' />
+    <meta name='auhor' content='아넥스' />
+
+    <link rel='shortcut icon' href='/upload/memberAfltn/1643957582_0_@_Favicon_2.annexpna.ico' type='image/x-icon' />
+
+    <!-- 프리텐다드,넥슨폰트 -->
+    <link href="https://webfontworld.github.io/pretendard/Pretendard.css" rel="stylesheet">
+    <link href="https://webfontworld.github.io/NexonLv1Gothic/NexonLv1Gothic.css" rel="stylesheet">
+    <!-- css -->
+    <style>
+    /* RESET */
+    * {margin: 0;padding: 0;border: 0;background: transparent;font-style: normal;box-sizing: border-box;letter-spacing: 0;}
+    nav,ul,li {list-style: none;}
+    a {text-decoration: none;color: #000;}
+    html {font-family: 'Pretendard';}
+
+    /* 공통영역 */
+    #wrap {max-width: 1300px;margin: 0 auto;padding: 0 50px;}
+
+    /* 헤더영역 */
+    #header {background-color: #fff;box-shadow: 0 1px 15px rgb(0 0 0 / 10%);position: fixed;left: 0;top: 0;right: 0;height: 80px;z-index: 100;}
+    #header>.wr {padding: 0 30px;height: 80px;line-height: 80px;}
+    #headerNav {display: flex;justify-content: space-between;align-items: center;font-weight: 500;height: 80px;}
+    .header_logoImg {display: flex;}
+
+    /* 메뉴 링크들 */
+    .headerNav_links {display: flex;}
+    .headerNav_links a {padding: 0 20px;font-size: 1.25em;}
+
+    /* 시작하기버튼 */
+    .header_login {margin-left: 20px;}
+    .btn {color: #000;background: #fff;border-radius: 10px;box-shadow: 3px 3px 3px 0px rgba(0, 0, 0, 0.25);padding: 0.4em 1.8em;font-size: 1.25em;font-weight: 500;}
+    .btn.primary {color: #fff;background: #fea30b;padding: 0.4em 1.8em;}
+
+    /* 햄버거메뉴 */
+    .ham {position: relative;width: 50px;height: 100%;display: none;}
+    .header .all_menu {position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);width: 50px;height: 50px;z-index: 102;}
+    .header .all_menu div {width: 39px;height: 23px;position: absolute;top: 50%;left: 50%;transform: translate(-50%, -50%);}
+    .header .all_menu span {position: absolute;left: 50%;width: 30px;height: 3px;background-color: #000;transition: all 0.2s ease-in-out 0s;transform: translateX(-50%);}
+    .header .all_menu span.am_top {top: 0;}
+    .header .all_menu span.am_mid {top: 9px;}
+    .header .all_menu span.am_bot {top: 18px;}
+    .header .all_menu.on span.am_top {top: 13px;left: 0;transform: rotate(45deg);}
+    .header .all_menu.on span.am_mid {width: 0;}
+    .header .all_menu.on span.am_bot {top: 13px;left: 0;transform: rotate(-45deg);}
+
+    /*햄버거 메뉴안의 GNB */
+    .header .gnb_wrap {position: absolute;top: 80px;right: -100%;height: 100vh;width: 100%;max-width: 860px;background-color: rgba(0, 0, 0, 0.8);transition: right 0.6s cubic-bezier(0.71, 0.29, 0.27, 0.94) 0s;z-index: 101;display: none;}
+    .header.open .gnb_wrap {right: 0px;}
+    .header .gnb_wrap .gnb {position: absolute;top: 10vw;right: 12vw;}
+    .header .gnb_wrap .gnb li a {display: block;font-size: 8vw;line-height: 14vw;color: #fff;font-weight: 700;text-align: right;}
+
+    /* 섹션 공통 텍스트 */
+    /* PC에서는 br숨김, MO에서는 displayblock 에서 br생성해야함 */
+    .br_block {display: none;}
+    section .content {text-align: center;}
+    section .content h2 {font-family: 'NexonLv1Gothic';font-weight: bold;font-size: 3.5em;margin-bottom: 20px;}
+    section .content p {margin-bottom: 30px;font-size: 2em;}
+    section .content p span {font-weight: bold;}
+
+    /* 섹션1 */
+    #section1 {display: flex;justify-content: center;padding: 200px 0;}
+    /* 왼쪽 이미지 */
+    #section1 .left {padding: 0 50px;}
+    #section1 .left img {max-width: 100%;}
+    /* 오른쪽 텍스트 */
+    #section1 .right .content {display: flex;flex-direction: column;align-items: unset;text-align: unset;}
+    #section1 .right .content p {font-size: 1.5em;}
+    #section1 .right .content .start {display: flex;}
+
+    /* 섹션2*/
+    #section2 {padding-bottom: 200px;}
+    #section2 .icon_box {display: flex;flex-wrap: wrap;justify-content: center;max-width: inherit;align-items: center;}
+    #section2 .icon_box .icon_area {display: flex;flex-direction: column;width: 100%;align-items: center;max-width: 200px;padding: 20px;}
+    #section2 .icon_box .icon_area.icon_4 {max-width: 400px;}
+    /* 텍스트 */
+    #section2 .section2_text .title_text {font-size: 1.2em;font-weight: 700;color: #929296;}
+
+    /* 섹션3 */
+    #section3 {padding-bottom: 100px;}
+    #section3 .icon_box {background-color: #f6f7fd;display: flex;align-items: flex-start;flex-wrap: wrap;justify-content: center;max-width: inherit;padding: 30px;text-align: center;}
+    #section3 .icon_box .icon_area {padding: 20px;max-width: 285px;}
+    /* 텍스트 */
+    #section3 .icon_box .icon_area .section3_text .title_text {font-size: 1.2em;font-weight: 600;}
+    #section3 .icon_box .icon_area .section3_text .sub_txt {color: #919191;margin-top: 10px;font-size: 1em;}
+    #section3 .image {margin-bottom: 1em;}
+
+    /* 섹션4 */
+    #section4 {padding-bottom: 200px;}
+    #section4 .icon_box {display: flex;flex-wrap: wrap;justify-content: center;max-width: inherit;align-items: center;}
+    #section4 .icon_box .icon_area {display: flex;flex-direction: column;width: 100%;align-items: center;max-width: 240px;padding: 20px;}
+    #section4 .icon_box.nth2 .icon_area {max-width: 270px;}
+    #section4 .icon_box.nth2 { margin-bottom: 30px;}
+
+    /* 섹션5 */
+    #section5 {padding-bottom: 200px;}
+    #section5 .icon_box {display: flex;align-items: flex-start;flex-wrap: wrap;justify-content: center;max-width: inherit;}
+    #section5 .icon_box .review_area {padding: 20px;display: flex;flex-direction: column;max-width: 400px;align-items: center;}
+    .score {display: flex;justify-content: center;align-items: center;margin-bottom: 1em}
+    .star_score {--percent: calc(var(--rating)/5*100%);display: inline-block;font-size: 1.4em;font-family: Times;line-height: 1;padding-right: 8px;}
+    .star_score:before {
+        content: "★★★★★";
+        letter-spacing: 3px;
+        background: linear-gradient(90deg, var(--color) var(--percent), rgba(64, 64, 64, .3) var(--percent));
+        -webkit-background-clip: text; 
+        -webkit-text-fill-color: transparent;
+    }
+    .score .number_score {font-size: 1.1em;}
+    #section5 .review_text {position: relative;margin: 0 0 10px;font-size: 1.3em;line-height: 1.6em;z-index: 0;}
+    #section5 .review_text::before {content: "\201C";position: absolute;font-family: Georgia, Times New Roman, Times, serif;font-size: 122pt;top: 40px;left: -20px;opacity: .1;}
+    #section5 .review_Writer {color: #1864ab;font-weight: 500;}
+
+    /* 섹션6 */
+    #section6 {padding-bottom: 200px;}
+    #section6 .content img {max-width: 100%;margin: 25px 0 40px 0;}
+
+    /* 섹션7 */
+    #section7 {padding-bottom: 200px;}
+    #section7 .content {background-color: #f6f7fd;padding: 50px;}
+    #section7 .content .link_btn {display: flex;justify-content: center;}
+    #section7 .content .link_btn .start {margin-right: 30px;}
+
+    /* 푸터 */
+    footer {display: flex;flex-direction: column;align-items: center;margin: 10px auto;  }
+    footer .copyright{text-align: center;line-height:1.5;}
+    footer .copyright .space{margin-left: 30px;}
+    footer .copyright a:hover {color: #fea30b;}
+    footer .terms {color: #fea30b;margin-top: 15px;}
+    footer .terms span {padding: 0 10px;font-weight: 700;}
+
+    /* 미디어쿼리 */
+    @media only screen and (max-width:860px) {
+        #wrap { padding: 20px;}
+        /* 헤더링크 */
+        .headerNav_links {display: none;}
+        .ham,.header .gnb_wrap { display: block;}
+        /* 섹션 공통 */
+        #section2,#section4,#section5,#section6,#section7 {padding-bottom: 25vw;}
+        /* MO에서는 br displayblock 에서 생성*/
+       .br_block {display: block;}
+        .br_none { display: none;}
+        section .content h2 {font-size: 9.5vw;margin-bottom: 20px;}
+        section .content p {font-size: 6.9vw;margin-bottom: 5.5vw;}
+        /* 섹션1 */
+        #section1 {flex-direction: column;align-items: center;padding: 10vw 0 25vw;}
+        #section1 .left {padding: 0 0 10vw;}
+        #section1 .right .content {align-items: center;}
+        #section1 .right .content p {font-size: 5.8vw;}
+        /* 섹션2 */
+        #section2 .icon_box .icon_area.icon_4 img {max-width: 100%;}
+        /* 섹션3 */
+        #section3 {padding-bottom: 15vw;}
+        /* 섹션4 */
+        #section4 .section4_p2 {font-size: 5.8vw;}
+        /* 섹션6 */
+        #section6 .content img {width: 65vw;margin: 0 0 6vw 0;}
+        /* 섹션7 */
+        #section7 .content {padding: 5vw;}
+        #section7 .start .btn,#section7 .inquiry .btn {display: inline-block;padding: 0.4em 1.4em;}
+        /* 푸터 */
+        footer {font-size: 4vw;}
+    }
+    </style>
+</head>
+
+<body>
+    <!-- 헤더 -->
+    <heder id="header" class="header">
+        <div class="wr">
+            <nav id="headerNav">
+                <!-- 로고 이미지 -->
+                <a id="headerLogo" href="/" class="header_logoImg"> <img src="images/logo.png" alt="Logo"></a>
+                <!-- 링크 -->
+                <div class="headerNav_links">
+                    <a href="#none" target="_blank">구매대행 노하우 안내</a>
+                    <a href="#none" target="_blank">가격 안내</a>
+                    <a href="#none" target="_blank">사용 문의</a>
+                    <div class="header_login"><a class="btn primary" href="https://annexpna.com">시작하기</a></div>
+                </div>
+
+                <!-- 햄버거메뉴버튼 -->
+                <!-- 햄버거메뉴(width 작아질때 나오기) -->
+                <div class="ham">
+                    <a href="javascript:void(0);" class="all_menu">
+                        <div>
+                            <span class="am_top"></span>
+                            <span class="am_mid"></span>
+                            <span class="am_bot"></span>
+                        </div>
+                    </a>
+                </div>
+
+                <!--햄버거 메뉴안의 GNB메뉴-->
+                <nav class="gnb_wrap">
+                    <ul class="gnb">
+                        <li><a href="#none">구매대행 노하우 안내</a></li>
+                        <li><a href="#none">가격 안내</a></li>
+                        <li><a href="#none">사용 문의</a></li>
+                        <li><a href="#none">시작하기</a></li>
+                    </ul>
+                </nav>
+            </nav>
+        </div>
+    </heder>
+    <!--//header-->
+
+    <!-- 픽스 빈공간 -->
+    <div id="headerSpacer" style="height:80px"></div>
+
+    <!-- 섹션 시작 -->
+    <div id="wrap">
+        <!-- section1 : 확실한 부업수익-->
+        <section id="section1">
+            <div class="left">
+                <img src="images/0won.png" alt="0원">
+            </div>
+            <div class="right">
+                <div class="content">
+                    <h2>확실한 부업수익</h2>
+                    <p>아넥스300은 새로운 수익화를 제시합니다.<br>
+                        기존의 해외 구매대행 사업도 기회가 많은 것은 사실이었지만,<br class="br_none">
+                        가장 중요한 판매자의 삶의 질을 고려하지 않았습니다.
+                    </p>
+                    <div class="start"><a class="btn primary" href="https://annexpna.com">시작하기</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section2 : 판매자의 삶의 질까지 고려한 수익화-->
+        <section id="section2">
+            <div class="content">
+                <h2>판매자의 삶의 질까지 고려한 수익화</h2>
+                <p>구매와 배대지까지 <br class="br_block">파손과 오배송까지 책임지는<br>
+                    <span>판매자를 위한 통합 케어 솔루션</span>
+                </p>
+            </div>
+            <div class="icon_box">
+                <div class="icon_area icon_1">
+                    <div class="image"><img src="images/section2_1.png" alt="주문수집"></div>
+                    <div class="section2_text"><div class="title_text">주문수집</div></div>
+                </div>
+                <div class="icon_area icon_2">
+                    <div class="image"><img src="images/section2_2.png" alt="상품검수"></div>
+                    <div class="section2_text"><div class="title_text">상품검수</div></div>
+                </div>
+                <div class="icon_area icon_3">
+                    <div class="image"><img src="images/section2_3.png" alt="재포장"></div>
+                    <div class="section2_text"><div class="title_text">재포장</div></div>
+                </div>
+                <div class="icon_area icon_4">
+                    <div class="image"><img src="images/section2_4.png" alt="택배"></div>
+                </div>
+                <div class="icon_area icon_5">
+                    <div class="image"><img src="images/section2_5.png" alt="배송완료"></div>
+                    <div class="section2_text"><div class="title_text">배송완료</div></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section3 : 판매자를 위한 프로그램-->
+        <section id="section3">
+            <div class="content">
+                <h2>판매자를 위한 <br class="br_block">프로그램</h2>
+                <p>상품등록부터 발송까지 <br class="br_block"><span>원스탑 솔루션</span></p>
+            </div>
+            <div class="icon_box">
+                <div class="icon_area icon_1">
+                    <div class="image"><img src="images/section3_.png" alt="상품아이템관리"></div>
+                    <div class="section3_text">
+                        <div class="title_text">상품아이템관리</div>
+                        <p class="sub_txt">
+                            타오바오, 알리바바 해외직구가능 사이트에서 아이템을 찾습니다.
+                            그리고 해당 URL을 입력하시면 해당 아이템을 정보를 가져옵니다
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_2">
+                    <div class="image"><img src="images/section3_.png" alt="마켓상품등록관리"></div>
+                    <div class="section3_text">
+                        <div class="title_text">마켓상품등록관리</div>
+                        <p class="sub_txt">
+                            수집한 상품아이템 판매를 위해 원하는 마켓에 정보를 전송합니다.
+                            마켓별 특성에 맞춰 각각의 정보수정이 가능합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_3">
+                    <div class="image"><img src="images/section3_.png" alt="주문상품관리기능"></div>
+                    <div class="section3_text">
+                        <div class="title_text">주문상품관리기능</div>
+                        <p class="sub_txt">
+                            수집한 상품아이템 판매를 위해 원하는 마켓에 정보를 전송합니다.
+                            마켓별 특성에 맞춰 각각의 정보 수정이 가능합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_4">
+                    <div class="image"><img src="images/section3_.png" alt="운송장번호전송"></div>
+                    <div class="section3_text">
+                        <div class="title_text">운송장번호전송</div>
+                        <p class="sub_txt">
+                            집하지도착 상품은 현지에서 한국 운송장번호가 부여됩니다.
+                            이때 운송장정보 전송을 통해 주문수집된 마켓으로 해당번호를 자동 전송합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_5">
+                    <div class="image"><img src="images/section3_.png" alt="전과정배송추적"></div>
+                    <div class="section3_text">
+                        <div class="title_text">전과정배송추적</div>
+                        <p class="sub_txt">
+                            해외구매상품의 경우 주문부터 배송대행지 그리고 통관 중 상태를 알수 없습니다. 
+                            셀러픽은 주문부터 전과정의 배송상태를 실시간으로 추적합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_6">
+                    <div class="image"><img src="images/section3_.png" alt="상황별카카오알림톡"></div>
+                    <div class="section3_text">
+                        <div class="title_text">상황별카카오알림톡</div>
+                        <p class="sub_txt">
+                            현지에서 구매한 상품의 상황을 몰라 배송문의가 많이 발생됩니다. 
+                            구매시점,집하지도착,한국배송시점별 카카오메시지를 전송합니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_7">
+                    <div class="image"><img src="images/section3_.png" alt="재고관리서비스"></div>
+                    <div class="section3_text">
+                        <div class="title_text">재고관리서비스</div>
+                        <p class="sub_txt">
+                            중국내 취소상품 및 재고를 관리해드립니다. 
+                            집하지에 미리 상품을준비해 두신다면 좀더빠른 배송 서비스를 실현할 수 있습니다.
+                        </p>
+                    </div>
+                </div>
+                <div class="icon_area icon_8">
+                    <div class="image"><img src="images/section3_.png" alt="정확한정산관리"></div>
+                    <div class="section3_text">
+                        <div class="title_text">정확한정산관리</div>
+                        <p class="sub_txt">
+                            판매활동을 하다보면 실제 돈을벌고 있는것인지 모를때가 있습니다. 정확한 정산관리를 통해 셀러의 수익율을 분석해 드립니다.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section4 : 판매자를 위한 프로그램-->
+        <section id="section4">
+            <div class="content">
+                <p>다양한 오픈마켓에 <br class="br_block"><span>업로드 연동 지원</span></p>
+            </div>
+            <div class="icon_box nth1">
+                <div class="icon_area icon_1">
+                    <div class="image"><img src="images/section4_1.png" alt="네이버로고"></div>
+                </div>
+                <div class="icon_area icon_2">
+                    <div class="image"><img src="images/section4_2.png" alt="쿠팡로고"></div>
+                </div>
+                <div class="icon_area icon_3">
+                    <div class="image"><img src="images/section4_3.png" alt="11번가로고"></div>
+                </div>
+                <div class="icon_area icon_4">
+                    <div class="image"><img src="images/section4_4.png" alt="지마켓로고"></div>
+                </div>
+                <div class="icon_area icon_5">
+                    <div class="image"><img src="images/section4_5.png" alt="옥션로고"></div>
+                </div>
+            </div>
+
+            <div class="icon_box nth2">
+                <div class="icon_area icon_6">
+                    <div class="image"><img src="images/section4_6.png" alt="티몬로고"></div>
+                </div>
+                <div class="icon_area icon_7">
+                    <div class="image"><img src="images/section4_7.png" alt="위메프로고"></div>
+                </div>
+                <div class="icon_area icon_8">
+                    <div class="image"><img src="images/section4_8.png" alt="롯데온로고"></div>
+                </div>
+                <div class="icon_area icon_9">
+                    <div class="image"><img src="images/section4_9.png" alt="인터파크로고"></div>
+                </div>
+            </div>
+            <div class="content">
+                <p class="section4_p2">
+                    아넥스300은 중국내 물류 배대지와 <br class="br_block">구매시스템을 정착해<br>
+                    <span>사업자가 사업에만 집중할 수 있고</span><br>
+                    시간을 절약하며 수익을 극대화하는 <br class="br_block">시스템을 만들어가고 있습니다.
+                </p>
+            </div>
+        </section>
+
+        <!-- section5 : 100% 무료교육 제공-->
+        <section id="section5">
+            <div class="content">
+                <h2>100% 무료교육 제공</h2>
+                <p>
+                    어려워서 못할까봐 겁먹던 초보도
+                    <span>3개월만에 <br class="br_block">월 300 부업수익 달성<i>!</i></span></p>
+            </div>
+            <div class="icon_box">
+                <div class="review_area review_1">
+                    <div class="score">
+                        <div class="star_score" style="--rating:4.5;--color:#F6BA10"></div>
+                        <div class="number_score">4.5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            아넥스를 사용하고나서 모든 반자동 프로그램을 끊었습니다.
+                            가격, 속도, 기능 등등 모든 면에서 타 프로그램보다 월등히 앞서가 있습니다.
+                            여러분의 매출이 달라질 것입니다, 아넥스를 사용하기만 한다면.
+                        </p>
+                    </div>
+                    <div class="review_Writer">박OO 대표님 - 구매대행 파워셀러/강사</div>
+                </div>
+                <div class="review_area review_2">
+                    <div class="score">
+                        <div class="star_score" style="--rating:5;--color:#F6BA10"></div>
+                        <div class="number_score">5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            구매대행 파워셀러까지 해보신 개발자분이 만드셔서 그런지...
+                            확실히 100% 셀러 입장에서 엄청 쓰기 편하게 만드셨네요..
+                            특히 이미지번역이 넘사벽.....번창하세요!
+                        </p>
+                    </div>
+                    <div class="review_Writer">박OO 대표님 - 네이버 빅파워 셀러</div>
+                </div>
+                <div class="review_area review_3">
+                    <div class="score">
+                        <div class="star_score" style="--rating:4.5;--color:#F6BA10"></div>
+                        <div class="number_score">4.5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            1세대 옛날 방식의 프로그램 쓰다가 이거 쓰니까 속이 뻥 뚫리네요.
+                            특히 포토샵처럼 샤샥 하고 글자 지울 수 있는 기능이 엄청 마음에 드네요.
+                            추가 비용도 없고 피드백도 아주 빠르셔서 굉장히 만족하며 쓰고 있어요.
+                        </p>
+                    </div>
+                    <div class="review_Writer">정OO 대표님 - 구매대행 파워셀러</div>
+                </div>
+                <div class="review_area review_4">
+                    <div class="score">
+                        <div class="star_score" style="--rating:5;--color:#F6BA10"></div>
+                        <div class="number_score">5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            UI가 너무 깔끔하고, 무엇보다 개발자분들이 직접 CS를 하셔서 그런지 대응이 진짜 빨라요.
+                            가격도 너무 저렴해서 오히려 죄송할 정도입니다.
+                        </p>
+                    </div>
+                    <div class="review_Writer">김OO 대표님 - 3년차 구매대행 셀러</div>
+                </div>
+                <div class="review_area review_5">
+                    <div class="score">
+                        <div class="star_score" style="--rating:4.5;--color:#F6BA10"></div>
+                        <div class="number_score">4.5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            초보라 어려움이 너무 많았는데 윈들리로 바꾸고 나서 초보 탈출 했습니다.
+                            상품을 찾기만 하면 아넥스가 비서처럼 착착착 해주니 공짜로 알바생 쓰는거 같아요~
+                        </p>
+                    </div>
+                    <div class="review_Writer">정OO 대표님 - 1년차 구매대행 셀러</div>
+                </div>
+                <div class="review_area review_6">
+                    <div class="score">
+                        <div class="star_score" style="--rating:5;--color:#F6BA10"></div>
+                        <div class="number_score">5 / 5</div>
+                    </div>
+                    <div class="review_text">
+                        <p>
+                            무료사용 후 고민 없이 1년결제했습니다.
+                            지금까지 써본 프로그램중 최고입니다. 게다가 가격까지 착하고요.
+                            UI/UX 디자인도 매우 직관적으로 되어있어 사용하기가 너무 쉽습니다.
+                            이거 만드신 분 복받으실겁니다.
+                        </p>
+                    </div>
+                    <div class="review_Writer">류OO 대표님 - 3년차 구매대행 셀러</div>
+                </div>
+            </div>
+        </section>
+
+        <!-- section6 : 카르텔-->
+        <section id="section6">
+            <div class="content">
+                <h2>카르텔</h2>
+                <div><img src="images/section6.png" alt="카르텔"></div>
+                <p>
+                    아넥스카르텔과 함께 <br class="br_block">이 시장을 선점하여<br>
+                    <span>경제적 자유를 획득해 나가길 <br class="br_block">기원합니다.</span>
+                </p>
+            </div>
+        </section>
+
+        <!-- section7 : 아넥스300과 함께하세요!-->
+        <section id="section7">
+            <div class="content">
+                <h2>아넥스300과 <br class="br_block">함께하세요<i>!</i></h2>
+                <p>진짜 판매자를 위한 <br class="br_block">구매대행 프로그램</p>
+                <div class="link_btn">
+                    <div class="start"><a class="btn primary" href="https://annexpna.com">시작하기</a></div>
+                    <div class="inquiry"><a class="btn" href="#none">문의하기</a></div>
+                </div>
+            </div>
+        </section>
+
+        <!-- 푸터 -->
+        <footer>
+            <div class="copyright">
+                ⓒ 2022 Teheran Company Group<span class="space"></span><br class="br_block">
+                사업자 등록번호 : 411-88-00339<span class="space"></span><br class="br_block">
+                통신판매업 신고번호 : 제2017-서울강남-02759호<br>
+                제휴문의 : <a href="mailto:tehernaco@naver.com">tehernaco@naver.com</a>
+            </div>
+            <div class="terms"><span>이용약관</span><span>개인정보처리방침</span></div>
+        </footer>
+    </div>
+    <!-- 햄버거메뉴 스크립트 -->
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script>
+        $(".all_menu").click(function (e) {
+
+            if ($(this).hasClass("on")) {
+                $(this).removeClass("on");
+                $(".header").removeClass("open");
+            } else {
+                $(this).addClass("on");
+                $(".header").addClass("open");
+            }
+            e.preventDefault();
+        });
+    </script>
+</body>
+</html>
