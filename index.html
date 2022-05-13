@@ -96,25 +96,25 @@
     /* 섹션 공통 텍스트 */
     .br_block {display: none;}
     section .content {text-align: center;}
-    section .content h2 {font-family: 'NexonLv1Gothic';font-weight: bold;font-size: 3.5em;margin-bottom: 20px;}
-    section .content p {padding-bottom: 30px;font-size: 2em;}
+    section .content h2 {font-family: 'NexonLv1Gothic';font-weight: bold;font-size: 3.5em;margin-bottom: 40px;}
+    section .content p {padding-bottom: 30px;font-size: 2em; line-height:1.3;}
     section .content p span {font-weight: bold;}
 
     /* 섹션1 */
-    #section1 {margin: 200px 0;}
+    #section1 {margin: 200px 0 300px}
     #section1 #wrap{display: flex; justify-content: space-between;}
     /*0원 이미지 */
     .money_img{height: 500px;}
-    .money_img img{position: absolute; top: 110px;z-index: 0; max-width:100%; padding-right:100px;}
+    .money_img img{position: absolute; top: 150px;z-index: 0; max-width:100%; padding-right:100px;}
     .money_img img.MO{display: none;}
     /* 오른쪽 텍스트 */
     #section1 .content {text-align: unset;position: relative; z-index: 1;}
-    #section1 .content h2{font-size: 5em;}
-    #section1 .content h3{font-size: 2em; margin-bottom:20px;}
+    #section1 .content h2{font-size: 5em; margin-bottom:18px;}
+    #section1 .content h3{font-size: 2em; margin-bottom:40px;}
     #section1 .content p {font-size: 1.5em;}
 
     /* 섹션2*/
-    #section2 {margin-bottom: 100px;text-align: center;}
+    #section2 {margin-bottom: 150px;text-align: center;}
     #section2 .icon_box {display: flex;flex-wrap: wrap;justify-content: center;max-width: inherit;align-items: center;}
     #section2 .icon_box .icon_area {display: flex;flex-direction: column;width: 100%;align-items: center;max-width: 192px;padding: 20px;}
     #section2 .icon_box .icon_area.icon_4 {max-width: 360px;}
@@ -123,7 +123,7 @@
     #section2 .btn{margin-top: 20px;}
 
     /* 섹션3 */
-    #section3 {margin-bottom: 50px;background-color: #f7f6f4; padding-top: 100px; }
+    #section3 {margin-bottom: 50px;background-color: #f7f6f4; padding:100px 0 70px;}
     #section3 #wrap{max-width: 1400px;}
     #section3 .icon_box {display: flex;align-items: flex-start;flex-wrap: wrap;justify-content: center;max-width: inherit;padding: 30px;text-align: center;}
     #section3 .icon_box .icon_area {padding: 20px;max-width: 310px;}
@@ -138,9 +138,11 @@
     #section4 .icon_box .icon_area {display: flex;flex-direction: column;width: 100%;align-items: center;max-width: 240px;padding: 20px;}
     #section4 .icon_box.nth2 .icon_area {max-width: 270px;}
     #section4 .icon_box.nth2 { margin-bottom: 30px;}
+    #section4 .section4_p2 {font-size: 1.5em;}
 
     /* 섹션5 */
     #section5 {background-color: #f7f6f4; padding-top: 100px;}
+    #section5 .content p{padding-bottom: 50px;}
     #section5 .icon_box {padding:30px 0;background-color: #fff; border-radius:25px; display: flex;align-items: flex-start;flex-wrap: wrap;justify-content: center;max-width: inherit;}
     #section5 .icon_box .review_area {padding: 20px 50px ;display: flex;flex-direction: column;max-width: 540px;align-items: center;}
     .score {display: flex;justify-content: center;align-items: center;margin-bottom: 1em}
@@ -156,18 +158,18 @@
     #section5 .review_text {position: relative;margin: 0 0 10px;font-size: 1.3em;line-height: 1.6em;z-index: 0;}
     #section5 .review_text::before {content: "\201C";position: absolute;font-family: Georgia, Times New Roman, Times, serif;font-size: 122pt;top: 40px;left: -20px;opacity: .1;}
     #section5 .review_Writer {color: #1864ab;font-weight: 500;}
-    #section5 .content.s5 p{padding-top:30px;}
+    #section5 .content.s5 p{padding:85px 0; font-size:1.5em;}
 
     /* 섹션6 */
     #section6 {color: #fff; position: relative;}
-    #section6 .content .cartel_img {height:80vh;}
+    #section6 .content .cartel_img {height:85vh;}
     #section6 .content .img {background: url(./images/section6.jpg) no-repeat 50% 50%/cover;height: 100%;}
     #section6 .content .text{position: absolute; left: 50%;transform: translateX(-50%); width: 100%;padding: 0 20px;}
     #section6 .content h2{top: 60px;}
     #section6 .content p{bottom: 60px;margin: 0; padding:0;}
 
     /* 섹션7 */
-    #section7 .content {background-color: #f7f6f4;padding: 60px;}
+    #section7 .content {background-color: #f7f6f4;padding: 100px 0;}
     #section7 .content .link_btn {display: flex;justify-content: center;}
     #section7 .content .link_btn .start {margin-right: 30px;}
 
@@ -212,17 +214,17 @@
         /* 섹션2 */
         #section2 .icon_box .icon_area.icon_4 img {max-width: 100%;}
         /* 섹션3 */
-        #section3 {margin-bottom: 10vw; padding-top:10vw;}
+        #section3 {padding:15vw 0 5vw; margin-bottom: 5vw;}
         /* 섹션4 */
-        #section4 .section4_p2 {font-size: 5.8vw;}
+        #section4 .section4_p2 {font-size: 5vw; padding-bottom: 0;}
         /* 섹션5 */
         #section5{padding-top:10vw;}
         #section5 .review_text {font-size: 4.4vw;}
-        #section5 .content.s5 p{font-size: 5vw; padding-top: 9.5vw;}
+        #section5 .content.s5 p{font-size: 5vw; padding:9.5vw 0 6vw;}
         /* 섹션6 */
         #section6 .content p{font-size: 6vw;}
         /* 섹션7 */
-        #section7 .content {padding: 5vw;}
+        #section7 .content {padding: 15vw 0;}
         #section7 .start .btn,#section7 .inquiry .btn {width: 120px;}
         /* 푸터 */
         footer {font-size: 4vw; margin:0;}
@@ -244,7 +246,7 @@
                 <!-- 링크 -->
                 <div class="headerNav_links">
                     <a href="https://cafe.naver.com/hbe502" target="_blank">구매대행 노하우 안내</a>
-                    <a href="#none" target="_blank">가격 안내</a>
+                    <a href="#none">가격 안내</a>
                     <a href="https://cafe.naver.com/hbe502" target="_blank">사용 문의</a>
                     <div class="header_login"><a class="btn primary" href="https://annexpna.com">시작하기</a></div>
                 </div>
@@ -286,7 +288,7 @@
             </div>
             <div class="content">
                 <h2>확실한 부업수익</h2>
-                <h3>아넥스300은 새로운 수익화를 제시합니다.</h3>
+                <h3>아넥스300은 <br class="br_block">새로운 수익화를 제시합니다.</h3>
                 <p>
                     기존의 해외 구매대행 사업도 기회가 많은 것은 사실이었지만,<br class="br_none">
                     가장 중요한 판매자의 삶의 질을 고려하지 않았습니다.
@@ -348,8 +350,8 @@
                     <div class="section3_text">
                         <div class="title_text">상품아이템관리</div>
                         <p class="sub_txt">
-                            타오바오, 알리바바 해외직구가능 사이트에서 아이템을 찾습니다.
-                            그리고 해당 URL을 입력하시면 해당 아이템을 정보를 가져옵니다
+                            타오바오, 알리바바 등의 사이트에서 <br>아이템을 찾습니다.
+                            그리고 URL을 <br>입력하시면 아이템을 정보를 가져옵니다.
                         </p>
                     </div>
                 </div>
@@ -358,8 +360,8 @@
                     <div class="section3_text">
                         <div class="title_text">마켓상품등록관리</div>
                         <p class="sub_txt">
-                            수집한 상품아이템 판매를 위해 원하는 마켓에 정보를 전송합니다.
-                            마켓별 특성에 맞춰 각각의 정보수정이 가능합니다.
+                            수집한 상품아이템 판매를 위해 <br>원하는 마켓에 정보를 전송합니다.<br>
+                            마켓별 특성에 맞춰 정보수정이 가능합니다.
                         </p>
                     </div>
                 </div>
@@ -368,8 +370,7 @@
                     <div class="section3_text">
                         <div class="title_text">주문상품관리기능</div>
                         <p class="sub_txt">
-                            수집한 상품아이템 판매를 위해 원하는 마켓에 정보를 전송합니다.
-                            마켓별 특성에 맞춰 각각의 정보 수정이 가능합니다.
+                            판매된 상품의 통합관리가 가능합니다.<br>상품을 업로드한 <br>모든 마켓의 주문 관리가 가능합니다.
                         </p>
                     </div>
                 </div>
@@ -378,8 +379,8 @@
                     <div class="section3_text">
                         <div class="title_text">운송장번호전송</div>
                         <p class="sub_txt">
-                            집하지도착 상품은 현지에서 한국 운송장번호가 부여됩니다.
-                            이때 운송장정보 전송을 통해 주문수집된 마켓으로 해당번호를 자동 전송합니다.
+                            집하지도착 상품은 현지에서 <br>한국 운송장번호가 부여됩니다. <br>
+                            운송장정보를 마켓으로 자동 전송합니다.
                         </p>
                     </div>
                 </div>
@@ -388,8 +389,7 @@
                     <div class="section3_text">
                         <div class="title_text">전과정배송추적</div>
                         <p class="sub_txt">
-                            해외구매상품의 경우 주문부터 배송대행지 그리고 통관 중 상태를 알수 없습니다.
-                            셀러픽은 주문부터 전과정의 배송상태를 실시간으로 추적합니다.
+                            해외구매상품은 주문 및 배송대행지, <br>통관 상태를 알수 없지만 <br>아넥스300은 전과정을 실시간 추적합니다.
                         </p>
                     </div>
                 </div>
@@ -398,8 +398,8 @@
                     <div class="section3_text">
                         <div class="title_text">상황별카카오알림톡</div>
                         <p class="sub_txt">
-                            현지에서 구매한 상품의 상황을 몰라 배송문의가 많이 발생됩니다.
-                            구매시점,집하지도착,한국배송시점별 카카오메시지를 전송합니다.
+                            현지에서 구매한 상품의 상황을<br> 알수 없기 때문에 문의가 많이 발생됩니다. 
+                            아넥스300은 시점별 알림톡을 전송합니다.
                         </p>
                     </div>
                 </div>
@@ -408,8 +408,8 @@
                     <div class="section3_text">
                         <div class="title_text">재고관리서비스</div>
                         <p class="sub_txt">
-                            중국내 취소상품 및 재고를 관리해드립니다.
-                            집하지에 미리 상품을준비해 두신다면 좀더빠른 배송 서비스를 실현할 수 있습니다.
+                            중국내 취소상품 및 재고를 관리합니다.<br>
+                            집하지에 미리 상품을준비해 두신다면 <br>좀더빠른 배송 서비스가 실현가능합니다.
                         </p>
                     </div>
                 </div>
@@ -418,7 +418,7 @@
                     <div class="section3_text">
                         <div class="title_text">정확한정산관리</div>
                         <p class="sub_txt">
-                            판매활동을 하다보면 실제 돈을벌고 있는것인지 모를때가 있습니다. 정확한 정산관리를 통해 셀러의 수익율을 분석해 드립니다.
+                            판매활동을 하다보면 <br>실제 돈을 벌고 있는지 모를때가 있습니다. 정확한 정산관리를 통해 수익률 분석합니다.
                         </p>
                     </div>
                 </div>
@@ -529,8 +529,8 @@
                     </div>
                     <div class="review_text">
                         <p>
-                            스마트스토어만 하다가 둘째가 태어나면서 돈이 더 필요해 새로운 도전을 해봤는데,
-                            완전히 만족합니다. 이거 수입만 200만원이 더 늘었고 그 노하우를 스토어에 적용했더니 스토어도 30% 추가성장했어요 정말 좋습니다!
+                            스마트스토어만 하다가 둘째가 태어나면서 돈이 더 필요해 새로운 도전을 해봤는데
+                            완전 만족합니다. 이거 수입만 200만원이 더 늘었고 그 노하우를 스토어에 적용했더니 스토어도 30% 추가성장했어요. 정말 좋습니다!
                         </p>
                     </div>
                     <div class="review_Writer">류OO 대표님 - 3년차 구매대행 셀러</div>
